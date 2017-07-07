@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="WAM">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+
+    <!--Bootstrap core CSS-->
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Bootstrap theme-->
+    <link href="vendor/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!--Custom styles for this template-->
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!--js files-->
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/angular/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <script src="config.js"></script>
+
+    <script src="views/user/controllers/login.controller.view.js"></script>
+    <script src="views/user/controllers/profile.controller.view.js"></script>
+    <script src="views/user/controllers/register.controller.view.js"></script>
+    <script src="views/website/controllers/website-list.controller.client.js"></script>
+    <script src="views/website/controllers/website-edit.controller.client.js"></script>
+    <script src="views/website/controllers/website-new.controller.client.js"></script>
+    <script src="views/widget/controllers/widget-list.controller.client.js"></script>
+
+    <script src="services/user.service.client.js"></script>
+    <script src="services/website.service.client.js"></script>
+
+
+    <title>Theme Template for Bootstrap</title>
+</head>
+<body>
+
+    <div ng-view>
+
+    </div>
+
+
+<!--Bootstrap core Javascript-->
+<!--Placed at the end of the document so the pages load faster-->
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
